@@ -1,3 +1,5 @@
+import { Header } from "@/components/Header";
+
 const iframeHTML = `
     <iframe
       title="Trip Request Form"
@@ -11,6 +13,7 @@ const iframeHTML = `
 export default function Home() {
   return (
     <main>
+      <Header />
       <div
         dangerouslySetInnerHTML={{ __html: iframeHTML }}
         style={{ width: "100vw", height: "100vh" }}
